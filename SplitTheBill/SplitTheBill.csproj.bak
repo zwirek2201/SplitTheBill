@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA6A284E-10D1-4100-A5A6-2B4C706561B0}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SplitTheBill</RootNamespace>
+    <AssemblyName>SplitTheBill</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data.Portable, Version=4.0.0.0, Culture=neutral, PublicKeyToken=59e704a76bc4613a">
+      <HintPath>..\packages\Mono.Data.Sqlite.Portable.1.0.3.5\lib\MonoAndroid\System.Data.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions.Portable, Version=4.0.0.0, Culture=neutral, PublicKeyToken=59e704a76bc4613a">
+      <HintPath>..\packages\Mono.Data.Sqlite.Portable.1.0.3.5\lib\MonoAndroid\System.Transactions.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Mobile">
+      <HintPath>..\Components\xamarin.mobile-0.7.1\lib\android\Xamarin.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="RoundedImageView">
+      <HintPath>..\Components\RoundedImageView-2.2.1\lib\android\RoundedImageView.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Vector.Drawable">
+      <HintPath>..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.Vector.Drawable.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Animated.Vector.Drawable">
+      <HintPath>..\packages\Xamarin.Android.Support.Animated.Vector.Drawable.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.Animated.Vector.Drawable.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.RecyclerView">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.RecyclerView.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Design">
+      <HintPath>..\packages\Xamarin.Android.Support.Design.23.3.0\lib\MonoAndroid43\Xamarin.Android.Support.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.CardView">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.CardView.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.CardView.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.MediaRouter">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.MediaRouter.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.MediaRouter.dll</HintPath>
+    </Reference>
+    <Reference Include="FormsViewGroup">
+      <HintPath>..\packages\Xamarin.Forms.2.2.0.31\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.2.2.0.31\lib\MonoAndroid10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.Android">
+      <HintPath>..\packages\Xamarin.Forms.2.2.0.31\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\packages\Xamarin.Forms.2.2.0.31\lib\MonoAndroid10\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.2.2.0.31\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Square.OkIO">
+      <HintPath>..\packages\Square.OkIO.1.5.0.0\lib\MonoAndroid\Square.OkIO.dll</HintPath>
+    </Reference>
+    <Reference Include="Square.OkHttp">
+      <HintPath>..\packages\Square.OkHttp.2.4.0.0\lib\MonoAndroid\Square.OkHttp.dll</HintPath>
+    </Reference>
+    <Reference Include="Square.Picasso">
+      <HintPath>..\packages\Square.Picasso.2.5.2.1\lib\MonoAndroid\Square.Picasso.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DB\DBRepository.cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Models\GroupModel.cs" />
+    <Compile Include="Models\MemberModel.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DB\SQLite.cs" />
+    <Compile Include="DB\SQLiteAsync.cs" />
+    <Compile Include="DialogAddMember.cs" />
+    <Compile Include="DialogAddMemberFromContacts.cs" />
+    <Compile Include="AddGroup.cs" />
+    <Compile Include="SlidingTabLayout\SlidingTabScrollView.cs" />
+    <Compile Include="SlidingTabLayout\SlidingTabStrip.cs" />
+    <Compile Include="ListAdapters\ContactListViewAdapter.cs" />
+    <Compile Include="ListAdapters\GroupListViewAdapter.cs" />
+    <Compile Include="ListAdapters\MembersListViewAdapter.cs" />
+    <Compile Include="FragmentGroups.cs" />
+    <Compile Include="SlidingTabLayout\SlidingTabAdapter.cs" />
+    <Compile Include="FragmentMain.cs" />
+    <Compile Include="GroupDetails.cs" />
+    <Compile Include="Models\PaymentModel.cs" />
+    <Compile Include="CalcRepository.cs" />
+    <Compile Include="Models\ContributionModel.cs" />
+    <Compile Include="ListAdapters\ContributionListViewAdapter.cs" />
+    <Compile Include="ListAdapters\PaymentListViewAdapter.cs" />
+    <Compile Include="ExpandableHeightListView.cs" />
+    <Compile Include="FragmentAddContribution.cs" />
+    <Compile Include="NetworkRepository.cs" />
+    <Compile Include="CurrencyUpdateStickyService.cs" />
+    <Compile Include="NotificationReceiver.cs" />
+    <Compile Include="ConnectivityCheckReceiver.cs" />
+    <Compile Include="FragmentCurrencies.cs" />
+    <Compile Include="ListAdapters\CurrencyListViewAdapter.cs" />
+    <Compile Include="Models\CurrencyModel.cs" />
+    <Compile Include="InitialStartup.cs" />
+    <Compile Include="FragmentSettings.cs" />
+    <Compile Include="SplashScreen.cs" />
+    <Compile Include="Advertisment.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\layout\Home.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\AddGroup.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\MembersListViewRow.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\ButtonNewMember.xml" />
+    <AndroidResource Include="Resources\layout\AddMember.axml" />
+    <AndroidResource Include="Resources\layout\AddMemberFromContacts.axml" />
+    <AndroidResource Include="Resources\layout\ContactsListViewRow.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\close.png" />
+    <AndroidResource Include="Resources\drawable\Search.png" />
+    <AndroidResource Include="Resources\anim\SlideLeftIn.xml" />
+    <AndroidResource Include="Resources\anim\SlideRightOut.xml" />
+    <AndroidResource Include="Resources\layout\SlidingViewLayout.axml" />
+    <AndroidResource Include="Resources\layout\GroupListViewRow.axml" />
+    <AndroidResource Include="Resources\layout\FragmentGroupsList.axml" />
+    <AndroidResource Include="Resources\drawable\CircularButton.xml" />
+    <AndroidResource Include="Resources\anim\SlideDownOut.xml" />
+    <AndroidResource Include="Resources\anim\SlideUpIn.xml" />
+    <AndroidResource Include="Resources\drawable\Groups.png" />
+    <AndroidResource Include="Resources\drawable\CircularImage.xml" />
+    <AndroidResource Include="Resources\layout\FragmentMain.axml" />
+    <AndroidResource Include="Resources\layout\GroupDetails.axml" />
+    <AndroidResource Include="Resources\drawable\Member.png" />
+    <AndroidResource Include="Resources\layout\ContributionsListViewRow.axml" />
+    <AndroidResource Include="Resources\layout\PaymentsListViewRow.axml" />
+    <AndroidResource Include="Resources\drawable\Arrow_body_red.png" />
+    <AndroidResource Include="Resources\drawable\Arrow_head_red.png" />
+    <AndroidResource Include="Resources\drawable\Arrow_tail_red.png" />
+    <AndroidResource Include="Resources\drawable\PaymentsCircularButton.xml" />
+    <AndroidResource Include="Resources\drawable\More.png" />
+    <AndroidResource Include="Resources\layout\AddContribution.axml" />
+    <AndroidResource Include="Resources\drawable\Member_default_thumbnail.png" />
+    <AndroidResource Include="Resources\drawable\Icon_checked.png" />
+    <AndroidResource Include="Resources\drawable\Icon_unchecked.png" />
+    <AndroidResource Include="Resources\drawable\Remove.png" />
+    <AndroidResource Include="Resources\layout\SpinnerLayout.axml" />
+    <AndroidResource Include="Resources\layout\FragmentCurrencies.axml" />
+    <AndroidResource Include="Resources\layout\CurrenciesListViewRow.axml" />
+    <AndroidResource Include="Resources\drawable\Currencies.png" />
+    <AndroidResource Include="Resources\drawable\Favourite_on.png" />
+    <AndroidResource Include="Resources\drawable\Favourite_off.png" />
+    <AndroidResource Include="Resources\drawable\Settings.png" />
+    <AndroidResource Include="Resources\layout\InitialSetup.axml" />
+    <AndroidResource Include="Resources\layout\FragmentSettings.axml" />
+    <AndroidResource Include="Resources\drawable\Arrow_down.png" />
+    <AndroidResource Include="Resources\drawable\Arrow_up.png" />
+    <AndroidResource Include="Resources\drawable\AddButton.png" />
+    <AndroidResource Include="Resources\drawable\Logo.png" />
+    <AndroidResource Include="Resources\layout\Splash.axml" />
+    <AndroidResource Include="Resources\drawable\SplashScreenLogo.png" />
+    <AndroidResource Include="Resources\drawable\Icon2.png" />
+    <AndroidResource Include="Resources\layout\Advertisement.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\TransparentButton.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Styles.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\BackButton.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="..\packages\Mono.Data.Sqlite.Portable.1.0.3.5\tools\Mono.Data.Sqlite.Portable.targets" Condition="Exists('..\packages\Mono.Data.Sqlite.Portable.1.0.3.5\tools\Mono.Data.Sqlite.Portable.targets')" />
+  <Target Name="EnsureMonoDataSqlitePortableImported" BeforeTargets="BeforeBuild" Condition="'$(MonoDataSqlitePortableImported)' == ''">
+    <Error Condition="!Exists('..\packages\Mono.Data.Sqlite.Portable.1.0.3.5\tools\Mono.Data.Sqlite.Portable.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them." />
+    <Error Condition="Exists('..\packages\Mono.Data.Sqlite.Portable.1.0.3.5\tools\Mono.Data.Sqlite.Portable.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build." />
+  </Target>
+  <Import Project="..\packages\xamstore-xamarin.mobile.0.7.1\build\monoandroid\xamstore-xamarin.mobile.props" Condition="Exists('..\packages\xamstore-xamarin.mobile.0.7.1\build\monoandroid\xamstore-xamarin.mobile.props')" />
+  <Import Project="..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />
+  <Import Project="..\packages\Xamarin.Forms.2.2.0.31\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.2.0.31\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+		<Target Name="BeforeBuild">
+		</Target>
+		<Target Name="AfterBuild">
+		</Target>
+ -->
+  <ItemGroup>
+    <XamarinComponentReference Include="xamandroidsupportv4-18">
+      <Version>23.1.1.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="RoundedImageView">
+      <Version>2.2.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SlidingTabLayout\" />
+    <Folder Include="ListAdapters\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/RlBase">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff"
+        android:minWidth="25px"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:id="@id/VllBackground"
+        android:minHeight="25px">
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ivThumbnail"
+            android:scaleType="fitCenter"
+            app:riv_corner_radius="30dip"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            app:riv_mutate_background="true"
+            app:riv_tile_mode="repeat"
+            app:riv_oval="true" />
+        <TextView
+            android:text="Name"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:textColor="#303030"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:id="@+id/txtName" />
+    </LinearLayout>
+</RelativeLayout>

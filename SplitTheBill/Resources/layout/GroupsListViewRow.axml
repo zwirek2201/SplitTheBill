@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:id="@+id/llHBackground"
+        android:weightSum="100"
+        android:background="@android:color/white">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_weight="80"
+            android:layout_height="match_parent"
+            android:weightSum="100"
+            android:id="@+id/llVGroupDetails">
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="60"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="0dp"
+                android:id="@+id/txtName"
+                android:gravity="bottom" />
+            <TextView
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="40"
+                android:id="@+id/txtMembers"
+                android:gravity="top" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="match_parent"
+            android:id="@+id/llVgroupAdditional" />
+    </LinearLayout>
+</LinearLayout>

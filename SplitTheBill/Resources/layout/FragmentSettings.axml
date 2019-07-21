@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/VllSettingsContainer"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/txtBaseText"
+                android:text="Base currency:" />
+            <Spinner
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:paddingRight="5dp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:text="EUR"
+                android:textSize="15dp"
+                android:id="@+id/sSpinner"
+                android:textAlignment="center"
+                android:background="#f2f2f2"
+                android:layout_marginLeft="10dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

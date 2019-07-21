@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="15dp"
+            android:text="Marcin Bator"
+            android:textColor="#000000"
+            android:paddingLeft="10dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:paddingTop="5dp"
+            android:id="@+id/txtNameFrom" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Katarzyna Karol"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:paddingRight="10dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:paddingTop="5dp"
+            android:id="@+id/txtNameTo" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/txtNameFrom"
+            android:layout_toLeftOf="@id/txtNameTo">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="fitEnd"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:id="@+id/ivArrow_tail"
+                android:src="@drawable/arrow_tail_red" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitStart"
+                android:layout_alignParentRight="true"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="10dp"
+                android:id="@+id/ivArrow_head"
+                android:src="@drawable/arrow_head_red" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:layout_toRightOf="@id/ivArrow_tail"
+                android:layout_toLeftOf="@id/ivArrow_head"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:id="@+id/ivArrow_body"
+                android:src="@drawable/arrow_body_red" />
+            <Button
+                android:layout_width="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="10dp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:text="102.42 kn"
+                android:minWidth="10dp"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:includeFontPadding="false"
+                android:layout_height="30dp"
+                android:background="@drawable/paymentscircularbutton"
+                android:id="@+id/btnPaymentAmount"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

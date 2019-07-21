@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/rlBackground">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:paddingLeft="10dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:text="Marcin Bator"
+            android:paddingTop="7dp"
+            android:id="@+id/txtName" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:singleLine="true"
+            android:gravity="left"
+            android:layout_toRightOf="@id/txtName"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:paddingRight="3dp"
+            android:text="Car"
+            android:paddingTop="3dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtContributionName" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="15dp"
+            android:gravity="right"
+            android:textColor="@android:color/holo_green_light"
+            android:paddingRight="10dp"
+            android:text="125.43 kn"
+            android:paddingTop="5dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:id="@+id/txtContribution" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="12dp"
+            android:layout_toLeftOf="@id/txtContribution"
+            android:layout_toRightOf="@id/txtContributionName"
+            android:textColor="#000000"
+            android:paddingRight="10dp"
+            android:text="12.04.2016"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:paddingTop="7dp"
+            android:id="@+id/txtDate" />
+    </RelativeLayout>
+</LinearLayout>

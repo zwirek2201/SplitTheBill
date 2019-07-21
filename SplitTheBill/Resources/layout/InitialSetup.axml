@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:id="@+id/RlBarBackground"
+        android:background="#1E90FF"
+        android:layout_height="50dp"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <TextView
+            android:text="Split The Bill"
+            android:layout_width="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="23dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:layout_height="match_parent"
+            android:id="@+id/txtAppName" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rlParent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingTop="10dp"
+            android:id="@+id/VllStep1"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:text="1. Choose your base currency"
+                android:id="@+id/txtChooseCurrency" />
+            <Spinner
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textSize="23dp"
+                android:background="#f2f2f2"
+                android:id="@+id/spBaseCurrency"
+                android:layout_gravity="center" />
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="#00ffffff"
+                android:paddingTop="5dp"
+                android:textAllCaps="false"
+                android:paddingBottom="5dp"
+                android:id="@+id/btnDone1"
+                android:textSize="20dp"
+                android:text="OK"
+                android:textColor="@android:color/holo_green_light" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingTop="10dp"
+            android:layout_alignParentTop="false"
+            android:id="@+id/VllStep2"
+            android:layout_below="@id/VllStep1"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:text="2. Download data"
+                android:id="@+id/txtChooseCurrency" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:textColor="#ff0000"
+                android:textStyle="normal"
+                android:layout_marginBottom="5dp"
+                android:text="Connect to the Internet to download data"
+                android:id="@+id/txtConnectToDownload" />
+            <Button
+                android:layout_marginTop="5dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="#00ffffff"
+                android:paddingTop="0dp"
+                android:textAllCaps="false"
+                android:paddingBottom="5dp"
+                android:id="@+id/btnDownload"
+                android:textSize="20dp"
+                android:text="Download"
+                android:textColor="@android:color/holo_green_light"
+                android:enabled="false" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingTop="10dp"
+            android:layout_alignParentTop="false"
+            android:id="@+id/VllStep3"
+            android:visibility="invisible"
+            android:layout_below="@id/VllStep2"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:text="3. Enjoy!"
+                android:id="@+id/txtChooseCurrency" />
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="#00ffffff"
+                android:paddingTop="5dp"
+                android:textAllCaps="false"
+                android:paddingBottom="5dp"
+                android:id="@+id/btnStart"
+                android:textSize="20dp"
+                android:text="Start the fun"
+                android:textColor="@android:color/holo_green_light"
+                android:enabled="false" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

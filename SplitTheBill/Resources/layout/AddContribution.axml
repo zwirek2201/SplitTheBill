@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2">
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:id="@+id/RlBarBackground"
+        android:background="#1E90FF"
+        android:layout_height="50dp"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <ImageButton
+            android:src="@drawable/backbutton"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:background="@drawable/TransparentButton"
+            android:id="@+id/btnBackButton"
+            android:scaleType="fitXY" />
+        <Button
+            android:text="DONE"
+            android:layout_width="80dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/TransparentButton"
+            android:layout_height="match_parent"
+            android:id="@+id/btnDoneButton" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:text="Choose friend"
+            android:textColor="#303030"
+            android:textSize="15dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/txtLabel" />
+        <HorizontalScrollView
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="true"
+            android:layout_below="@id/txtLabel"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbarSize="2dp"
+            android:id="@+id/HSVMembers" />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:gravity="left"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:hint="Name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#ffffff"
+            android:layout_below="@id/HSVMembers"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/etName" />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etName"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/HllAmount">
+            <EditText
+                android:inputType="numberDecimal"
+                android:layout_width="0dp"
+                android:textColor="#303030"
+                android:textSize="20dp"
+                android:maxLength="5"
+                android:layout_weight="6"
+                android:singleLine="true"
+                android:gravity="center"
+                android:layout_height="50dp"
+                android:id="@+id/etAmount1" />
+            <TextView
+                android:text="."
+                android:textColor="#505050"
+                android:gravity="bottom"
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:id="@+id/textView1"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp" />
+            <EditText
+                android:inputType="numberDecimal"
+                android:layout_width="0dp"
+                android:textColor="#303030"
+                android:textSize="20dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:singleLine="true"
+                android:maxLength="2"
+                android:layout_height="50dp"
+                android:id="@+id/etAmount2" />
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="40dp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:text="EUR"
+                android:textSize="15dp"
+                android:id="@+id/sSpinner"
+                android:textAlignment="center"
+                android:background="#f2f2f2"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

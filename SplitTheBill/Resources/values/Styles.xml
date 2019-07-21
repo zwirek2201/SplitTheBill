@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <style name="UpInDownOut_anim">
+    <item name="android:windowEnterAnimation">@anim/SlideUpIn</item>
+    <item name="android:windowExitAnimation">@anim/SlideDownOut</item>
+  </style>
+  <style name="RightInRightOut_anim">
+    <item name="android:windowEnterAnimation">@anim/SlideLeftIn</item>
+    <item name="android:windowExitAnimation">@anim/SlideRightOut</item>
+  </style>
+</resources>

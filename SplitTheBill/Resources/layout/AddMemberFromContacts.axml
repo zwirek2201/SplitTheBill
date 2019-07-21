@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:minWidth="300dp"
+    android:minHeight="450dp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="20dp"
+    android:background="#f5f5f5"
+    android:id="@+id/VllBackground">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/RlBarBackground"
+        android:background="#1E90FF"
+        android:layout_height="50dp"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <ImageButton
+            android:src="@drawable/backbutton"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:background="@drawable/TransparentButton"
+            android:id="@+id/ibtnBackButton"
+            android:scaleType="fitXY" />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/TransparentButton"
+            android:layout_height="match_parent"
+            android:id="@+id/ibtnSearchButton"
+            android:src="@drawable/search"
+            android:scaleType="fitXY"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Search"
+            android:textColor="#ffffff"
+            android:gravity="bottom"
+            android:layout_toRightOf="@id/ibtnBackButton"
+            android:layout_toLeftOf="@id/ibtnSearchButton"
+            android:id="@+id/etxtSearch" />
+    </RelativeLayout>
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:background="#70ffffff"
+        android:id="@+id/lvContacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

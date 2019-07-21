@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:minWidth="300dp"
+    android:minHeight="450dp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="20dp"
+    android:background="#f5f5f5"
+    android:id="@+id/VllBackground">
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:id="@+id/RlBarBackground"
+        android:background="#1E90FF"
+        android:layout_height="50dp"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <ImageButton
+            android:src="@drawable/backbutton"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:background="@drawable/TransparentButton"
+            android:id="@+id/btnBackButton"
+            android:scaleType="fitXY" />
+        <Button
+            android:text="DONE"
+            android:layout_width="80dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/TransparentButton"
+            android:layout_height="match_parent"
+            android:id="@+id/btnDoneButton" />
+    </RelativeLayout>
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:id="@+id/svScroll">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/VllScrollContainer">
+            <Button
+                android:text="Add from contacts"
+                android:layout_width="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/buttonnewmember"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:textAllCaps="false"
+                android:textStyle="normal"
+                android:typeface="normal"
+                android:layout_height="35dp"
+                android:id="@+id/btnContacts" />
+            <EditText
+                android:hint="Name"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                android:background="#70ffffff"
+                android:gravity="left"
+                android:paddingTop="5dp"
+                android:scrollHorizontally="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/etxtName"
+                android:cursorVisible="true"
+                android:singleLine="true" />
+            <EditText
+                android:hint="Surname"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                android:background="#70ffffff"
+                android:gravity="left"
+                android:paddingTop="5dp"
+                android:scrollHorizontally="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/etxtSurname" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/VllPhones">
+                <TextView
+                    android:text="+ Add number"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="12dp"
+                    android:textColor="#500000ff"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:gravity="left"
+                    android:layout_height="25dp"
+                    android:id="@+id/txtAddPhone" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_marginTop="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/VllEmails">
+                <TextView
+                    android:text="+ Add email"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="12dp"
+                    android:textColor="#500000ff"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:gravity="left"
+                    android:layout_height="25dp"
+                    android:id="@+id/txtAddEmail" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

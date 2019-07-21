@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/RlBase">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff"
+        android:minWidth="25px"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:id="@id/VllBackground"
+        android:minHeight="25px">
+        <ImageView
+            android:src="@drawable/icon_unchecked"
+            android:background="@android:color/transparent"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/ivSelect"
+            android:scaleType="fitCenter" />
+        <TextView
+            android:text="Name"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:textColor="#303030"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:id="@+id/txtName" />
+    </LinearLayout>
+</RelativeLayout>

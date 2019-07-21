@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:weightSum="5"
+        android:layout_height="50dp"
+        android:id="@+id/HllToolBox">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="#00ffffff"
+            android:layout_height="match_parent"
+            android:id="@+id/btnToolBox1"
+            android:scaleType="centerInside" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="#00ffffff"
+            android:layout_height="match_parent"
+            android:id="@+id/btnToolBox2"
+            android:scaleType="centerInside" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="#00ffffff"
+            android:layout_height="match_parent"
+            android:id="@+id/btnToolBox3"
+            android:scaleType="centerInside" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:background="#00ffffff"
+            android:layout_height="match_parent"
+            android:id="@+id/btnToolBox4"
+            android:scaleType="centerInside" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:textSize="15dp"
+        android:id="@+id/txtNothing"
+        android:textColor="#000000"
+        android:gravity="center" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_height="0dp"
+        android:layout_below="@id/txtNothing"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/HllToolBox"
+        android:id="@+id/lvGroups" />
+    <Button
+        android:text="+"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="55dp"
+        android:background="@drawable/circularbutton"
+        android:layout_marginBottom="7dp"
+        android:layout_height="55dp"
+        android:id="@+id/btnAddGroup" />
+</RelativeLayout>
